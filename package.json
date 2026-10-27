@@ -20,6 +20,8 @@
     "db:studio": "prisma studio"
   },
   "dependencies": {
+    "@orpc/client": "^1.16.1",
+    "@orpc/server": "^1.16.1",
     "@prisma/adapter-neon": "^7.10.1",
     "@prisma/client": "^7.10.1",
     "@t3-oss/env-nextjs": "^0.13.11",
