@@ -16,6 +16,10 @@ export const auth = betterAuth({
   database: prismaAdapter(prisma, {
     provider: "postgresql",
   }),
+  account: {
+    accountLinking: { enabled: true },
+    updateAccountOnSignIn: true,
+  },
   emailAndPassword: {
     enabled: true,
     requireEmailVerification: true,
@@ -28,6 +32,12 @@ export const auth = betterAuth({
       after(() =>
         sendVerificationEmail({ to: user.email, name: user.name, url })
       );
+    },
+  },
+  socialProviders: {
+    google: {
+      clientId: env.GOOGLE_CLIENT_ID,
+      clientSecret: env.GOOGLE_CLIENT_SECRET,
     },
   },
   plugins: [nextCookies()],
