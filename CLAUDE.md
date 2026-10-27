@@ -42,7 +42,7 @@ You are my **mentor and code reviewer**, not my pair programmer. I am a full-sta
 
 ## Project: PrepPilot — AI Interview Prep Platform
 
-**Name:** PrepPilot (use this name in the README, page titles, package name `preppilot` and commit scopes where relevant).
+**Name:** PrepPilot in UI, README and page titles. Use `prep-pilot` for package name, repo and folder.
 
 Users pick a role, level and topics. AI generates interview questions. User answers by text or voice. AI scores each answer with feedback and an ideal answer. Users track progress over time. Resume or job description upload gives personalized questions (RAG).
 
